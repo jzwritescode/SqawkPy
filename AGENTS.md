@@ -84,11 +84,26 @@ Predicates for which outcomes to handle are declared via `PredicateBuilder`.
 
 Path-specific coding conventions are located in [`.github/instructions`](.github/instructions):
 
+- [`python.instructions.md`](.github/instructions/python.instructions.md) — Python idioms, PEP 8, async/sync execution, slots, and anti-patterns.
+- [`style.instructions.md`](.github/instructions/style.instructions.md) — NumPy docstrings and comprehensive commenting standards.
 - [`tests.instructions.md`](.github/instructions/tests.instructions.md) — pytest conventions, determinism, mocking, and coverage.
 - [`library.instructions.md`](.github/instructions/library.instructions.md) — outcome handling, sync/async parity, time providers, and thread/task safety.
 - [`compatibility.instructions.md`](.github/instructions/compatibility.instructions.md) — Python version targets and type safety.
 - [`performance.instructions.md`](.github/instructions/performance.instructions.md) — allocations, slots, and context reuse.
 - [`benchmarks.instructions.md`](.github/instructions/benchmarks.instructions.md) — benchmark benchmarks with pytest-benchmark.
 - [`public-api.instructions.md`](.github/instructions/public-api.instructions.md) — public contract stability and `__all__` definitions.
+- [`design_patterns.instructions.md`](.github/instructions/design_patterns.instructions.md) — architecture, pipelines, strategies, outcomes, and state machines.
 - [`docs.instructions.md`](.github/instructions/docs.instructions.md) — documentation standards and runnable samples.
+- [`outcome_based_software_engineering.instructions.md`](.github/instructions/outcome_based_software_engineering.instructions.md) — OBSE philosophy, Definition of Done gate, delivery workflow, and anti-patterns.
+
+## Specialized Agent Roles
+
+Agent role definitions for this repository are organized in [`.github/agents`](.github/agents):
+
+- [`agile_project_manager.md`](.github/agents/agile_project_manager.md) — Leads the outcome-based software engineering process, tracks sprint gates, and coordinates sub-agents.
+- [`analysis.md`](.github/agents/analysis.md) — Deconstructs C# source in `dotnet/`, extracts algorithms and options, and catalogues edge cases.
+- [`design.md`](.github/agents/design.md) — Translates analysis into idiomatic Python architectures, protocols, `__slots__` layout, and dual sync/async contracts.
+- [`coding.md`](.github/agents/coding.md) — Implements production Python code adhering to strict typing, NumPy docstrings, and zero external dependencies.
+- [`testing.md`](.github/agents/testing.md) — Writes deterministic pytest suites, property-based tests (`hypothesis`), and validates coverage.
+- [`documentation.md`](.github/agents/documentation.md) — Authors Sphinx-ready documentation, verifiable examples, and updates engineering roadmaps.
 
